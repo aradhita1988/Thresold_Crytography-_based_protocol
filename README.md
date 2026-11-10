@@ -57,6 +57,18 @@ truffle compile
 
 ### Deploy contracts and run experiments
 
-Execute the appropriate deployment and experiment scripts according to the project configuration.
+Run Normal Access Experiments:
+Execute the normal access experiment: node scripts/normalAccess.js
+This experiment evaluates legitimate cross-chain data access and records the associated performance metrics.
+
+Run Griefing Attack Experiment:
+Execute the griefing attack experiment: node scripts/griefingAttack.js
+This experiment evaluates the framework's ability to detect and mitigate griefing attacks involving incomplete or malicious observer participation.
+
+Execute the metrics and aggregation scripts, if configured:
+node scripts/metrics.js
+node aggregate_result.js
+
+
 
 
